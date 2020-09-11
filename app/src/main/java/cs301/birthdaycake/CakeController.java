@@ -16,7 +16,7 @@ public class CakeController implements View.OnClickListener{
     @Override
     public void onClick(View view) {
         Log.d("blowout_text", "Blow out ;)");
-        controlModel.candlesLit = false;
-        view.invalidate();
+        controlView.getCakeModel().candlesLit = false;
+        controlView.invalidate();
     }
 }

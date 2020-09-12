@@ -4,7 +4,7 @@ public class CakeModel {
 
     boolean candlesLit = true;
     int candlesNum;
-    boolean frostingOn;
+    boolean frostingOn = true;
     boolean candlesOn = true;
 
 

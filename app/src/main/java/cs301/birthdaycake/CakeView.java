@@ -129,9 +129,10 @@ public class CakeView extends SurfaceView {
         canvas.drawRect(cakeLeft, top, cakeLeft + cakeWidth, bottom, cakePaint);
 
         if(modelView.candlesOn) {
-            //Now a candle in the center
-            drawCandle(canvas, cakeLeft + cakeWidth / 2 - candleWidth / 2, cakeTop);
-            drawCandle(canvas, cakeLeft + cakeWidth / 4 - candleWidth / 4, cakeTop);
+            //Now a candle depending on the numCandles instance variable
+            for(int i = 0; i < modelView.candlesNum; i++) {
+                drawCandle(canvas, cakeLeft + (i*cakeWidth)/4 - candleWidth/2, cakeTop);
+            }
         }
         else{
             //Haha draw no candles

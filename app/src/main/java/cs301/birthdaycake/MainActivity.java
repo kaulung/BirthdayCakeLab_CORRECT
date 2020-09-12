@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Switch;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -22,6 +23,9 @@ public class MainActivity extends AppCompatActivity {
         //Creating reference to Blow Out button
         Button blowButton = findViewById(R.id.blowout_button);
         blowButton.setOnClickListener(mainController);
+
+        Switch candleSwitch = findViewById(R.id.candle_Switch);
+        candleSwitch.setOnCheckedChangeListener(mainController);
 
     }
 

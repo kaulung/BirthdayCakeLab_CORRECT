@@ -131,7 +131,7 @@ public class CakeView extends SurfaceView {
         if(modelView.candlesOn) {
             //Now a candle depending on the numCandles instance variable
             for(int i = 0; i < modelView.candlesNum; i++) {
-                drawCandle(canvas, cakeLeft + (i*cakeWidth)/4 - candleWidth/2, cakeTop);
+                drawCandle(canvas, cakeLeft + (i*cakeWidth)/(modelView.candlesNum), cakeTop);
             }
         }
         else{

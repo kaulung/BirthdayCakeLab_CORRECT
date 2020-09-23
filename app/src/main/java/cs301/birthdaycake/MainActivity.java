@@ -31,6 +31,8 @@ public class MainActivity extends AppCompatActivity {
         SeekBar candleSeek = findViewById(R.id.candle_seek);
         candleSeek.setOnSeekBarChangeListener(mainController);
 
+        mainView.setOnTouchListener(mainController);
+
     }
 
     public void goodbye(View button){

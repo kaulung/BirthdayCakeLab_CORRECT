@@ -6,6 +6,8 @@ public class CakeModel {
     int candlesNum;
     boolean frostingOn = true;
     boolean candlesOn = true;
+    float touchPosX;
+    float touchPosY;
 
 
 }

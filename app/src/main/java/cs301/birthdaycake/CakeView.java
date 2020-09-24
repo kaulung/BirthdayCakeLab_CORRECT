@@ -17,8 +17,7 @@ public class CakeView extends SurfaceView {
     Paint innerFlamePaint = new Paint();
     Paint wickPaint = new Paint();
     private CakeModel modelView = new CakeModel();
-    Paint balloonPaint = new Paint();
-    Paint stringPaint = new Paint();
+    Paint coordPaint = new Paint();
 
 
     /* These constants define the dimensions of the cake.  While defining constants for things
@@ -69,11 +68,8 @@ public class CakeView extends SurfaceView {
 
         setBackgroundColor(Color.WHITE);  //better than black default
 
-        balloonPaint.setColor(Color.BLUE);
-        balloonPaint.setStyle(Paint.Style.FILL);
-
-        stringPaint.setColor(Color.BLUE);
-        stringPaint.setStyle(Paint.Style.FILL);
+        coordPaint.setColor(Color.RED);
+        coordPaint.setTextSize(50.0f);
 
 
     }
@@ -149,8 +145,8 @@ public class CakeView extends SurfaceView {
             //Haha draw no candles
         }
 
-       canvas.drawOval(modelView.touchPosX+30, modelView.touchPosY+50, modelView.touchPosX-30, modelView.touchPosY-50, balloonPaint);
-        canvas.drawLine(modelView.touchPosX, modelView.touchPosY, modelView.touchPosX+70, modelView.touchPosY+130, stringPaint);
+        canvas.drawText("Touched at :("+(int)modelView.touchPosX+","+(int)modelView.touchPosY+")",1350f,700f,coordPaint);
+
     }//onDraw
 
 }//class CakeView

@@ -67,6 +67,7 @@ public class CakeView extends SurfaceView {
         wickPaint.setStyle(Paint.Style.FILL);
 
 
+
         setBackgroundColor(Color.WHITE);  //better than black default
 
         balloonPaint.setColor(Color.BLUE);

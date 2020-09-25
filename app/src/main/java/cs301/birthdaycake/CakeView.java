@@ -18,7 +18,6 @@ public class CakeView extends SurfaceView {
     Paint wickPaint = new Paint();
     private CakeModel modelView = new CakeModel();
     Paint coordPaint = new Paint();
-    Paint pointless = new Paint();
 
 
     /* These constants define the dimensions of the cake.  While defining constants for things
@@ -149,6 +148,8 @@ public class CakeView extends SurfaceView {
 
         canvas.drawText("Touched at :("+(int)modelView.touchPosX+","+(int)modelView.touchPosY+")",1350f,700f,coordPaint);
 
+        canvas.drawOval(modelView.touchPosX+30, modelView.touchPosY+50, modelView.touchPosX-30, modelView.touchPosY-50, balloonPaint);
+        canvas.drawLine(modelView.touchPosX, modelView.touchPosY, modelView.touchPosX+70, modelView.touchPosY+130, stringPaint);
     }//onDraw
 
 }//class CakeView

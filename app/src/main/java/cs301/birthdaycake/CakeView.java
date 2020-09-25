@@ -18,6 +18,7 @@ public class CakeView extends SurfaceView {
     Paint wickPaint = new Paint();
     private CakeModel modelView = new CakeModel();
     Paint coordPaint = new Paint();
+    Paint pointless = new Paint();
 
 
     /* These constants define the dimensions of the cake.  While defining constants for things
